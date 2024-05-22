@@ -1,0 +1,56 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 350px;
+  backdrop-filter: blur(4.5px);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  &__nav {
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+
+      li {
+        color: #fff;
+        font-size: 18px;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__search{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 15px 350px;
+    display: flex;
+    transition: all 2s;
+    opacity: 0;
+    z-index: 1;
+    
+
+    input{
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      font-size: 20px;
+    }
+
+    &.active{
+      opacity: 1;
+      top: 100%;
+    }
+  }
+}

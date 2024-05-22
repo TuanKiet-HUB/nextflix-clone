@@ -1,0 +1,15 @@
+.carousel h1{
+    color: aliceblue;
+}
+.carousel img{
+    width: 100%;
+    height: 10dvh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+}
+.carousel.mutil-item img{
+    width: 100%;
+    height: 400px;
+}
